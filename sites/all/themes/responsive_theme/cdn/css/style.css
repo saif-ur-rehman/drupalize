@@ -1,0 +1,177 @@
+/**
+ * Place your custom styles here.
+ */
+ body{
+  /*background:url(../images/back.png);*/
+ }
+ .navbar li a:link{
+  color: gray;
+ }
+ .navbar li a:visited{
+  color: red;
+ }
+  .navbar li a:hover{
+    text-decoration:underline;
+    background: green;
+    color: white;
+ }
+ .navbar li a:active {
+    color: yellow;
+}
+.well{
+background-color: red;
+}
+.region-sidebar-second{
+ background-color: yellow;
+}
+#edit-search-block-form--2{
+  margin-right: 330px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #e3f2fd;
+  color: black;
+}
+.hilight{
+  background-color: #FEEA88;
+}
+.nav-firstblank{
+
+width: 100%;
+height:70px;
+background-color: rgb(228, 228, 228);
+
+}
+
+.nav-first{
+background-color: rgb(242, 242, 242);
+
+border:none;
+border-bottom: 1px solid rgb(228, 228, 228);
+
+}
+
+.nav-first  li{
+
+  border-right: 1px solid rgb(228, 228, 228);
+
+}
+.navbar li a:link{
+
+  border-left:2px solid rgb(228, 228, 228)
+color: #000;
+
+}
+.navbar .nav > li > a:hover {
+
+    color: #cc0000;
+}
+ .navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: #000;
+
+ }
+.navbar li a:visited{
+color: rgb(128, 128, 128)
+}
+
+
+/*Secondary Bar Logo , Search , Cart Wish List Cart*/
+.secondary li a:link{
+
+color: #000;
+background-color: transparent;
+}
+.secondary > .active > a,
+.secondaryv > .active > a:hover,
+.secondary > .active > a:focus {
+      color: #000;
+
+ }
+
+
+
+
+.secondary > li > a:hover {
+
+    color: #cc0000;
+}
+
+.whole{
+ background-color: #eeeeee;
+}
+.second{
+  margin-top: 0px;
+  overflow: hidden;
+  border :1px;
+  border-style: solid;
+  border-color: #e9e9e9;
+}
+.cat{
+  background-color: #f2f2f2;
+  float: left;
+  margin-left: 100px;
+  padding: 10px 40px 10px 10px;
+}
+.deals{
+  float: right;
+  margin-right: 10px;
+  padding: 10px 40px 10px 10px;
+}
+.deals a{
+  margin-left: 10px;
+  color: black;
+  text-decoration:none;
+}
+.deals a:hover{
+  color: orange;
+
+}
+.cat a{
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+}
+.product-list {
+  margin-top: 10px;
+
+}
+.product-list a{
+  color: black;
+}
+.product-list a:hover{
+  text-decoration: none;
+  color: red;
+}
+.ali a{
+  float: left;
+  font-family: monospace;
+  color: #ff9500;
+  font-size: 30px;
+  text-decoration: none;
+}
+.exp a{
+  float: left;
+  font-family: monospace;
+  text-decoration: none;
+  color: #f10000;
+  font-size: 30px;
+}
+.ali&axp{
+  overflow: hidden;
+}
+.logo-slogan{
+  margin-left: 20px;
+  float: left;
+  color: gray;
+  font-size: 10px;
+}
+.btn-primary{
+  color:white;
+  background-color: #e02d04;
+}
+.btn-primary:hover{
+ background-color: #e02d04;
+ color: black;
+}
+
