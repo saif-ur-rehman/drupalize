@@ -8,7 +8,11 @@ jQuery( document ).ready(function($) {
   $('.field-content p').hover(function(){
       $(this).toggleClass('hilight');
     });
-  // $('#block-user-login').hide();
+
+   // $('.region-sidebar-first ul li').hide();
+  // $('a.dropdown-toggle').hover(function(){
+  //    $('ul li').slideToggle();
+    });
 
 // read more Ajax
       // $('.node-readmore a').click(function(){

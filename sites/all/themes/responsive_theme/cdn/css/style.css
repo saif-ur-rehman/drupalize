@@ -4,26 +4,6 @@
  body{
   /*background:url(../images/back.png);*/
  }
- .navbar li a:link{
-  color: gray;
- }
- .navbar li a:visited{
-  color: red;
- }
-  .navbar li a:hover{
-    text-decoration:underline;
-    background: green;
-    color: white;
- }
- .navbar li a:active {
-    color: yellow;
-}
-.well{
-background-color: red;
-}
-.region-sidebar-second{
- background-color: yellow;
-}
 #edit-search-block-form--2{
   margin-right: 330px;
   border-bottom-left-radius: 20px;
@@ -101,17 +81,13 @@ background-color: transparent;
  background-color: #eeeeee;
 }
 .second{
-  margin-top: 0px;
-  overflow: hidden;
-  border :1px;
-  border-style: solid;
-  border-color: #e9e9e9;
+  background-color: white;
+
 }
 .cat{
   background-color: #f2f2f2;
   float: left;
-  margin-left: 100px;
-  padding: 10px 40px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
 .deals{
   float: right;
@@ -174,4 +150,72 @@ background-color: transparent;
  background-color: #e02d04;
  color: black;
 }
+.container .jumbotron, .container-fluid .jumbotron {
+    padding: 10px;
+}
+#header{
+  padding: 10px 40px 10px 10px;
+  background-color: #f8f8f8;
+}
+#header li{
+  float: left;
+  display: inline;
+}
+#header li a{
+  color: black;
+  display: inline;
+}
+#header li a:hover{
+  color: orange;
+  background-color: unset;
+}
+.back{
+  background-color: #eeeeee;
+}
+#toopbar{
+ padding: 10px 40px 10px 10px;
+  background-color: #f2f2f2;
+  border-bottom: solid;
+}
+#toopbar li{
+  float: right;
+  display: inline
+}
+#toopbar li a{
+  display: inline;
+  color: gray;
+}
+#toopbar li a:hover{
+  color: #cc0000;
+}
+.region-sidebar-first{
+  background-color: white;
+}
+.region-sidebar-first li a{
+  color: black;
+}
+.region-sidebar-first li a:hover{
+  color: #cc0000;
+  background-color: white;
+}
+.region-sidebar-first .dropdown-menu{
+  display: none;
+}
+.region-sidebar-first ul li:hover .dropdown-menu{
+  display: block;
+  margin-top: -20%;
+  margin-left: 60%;
+}
+.region-sidebar-first .caret{
+  display: none;
+}
+/*#block-user-login{
+  display: none;
+  background-color: black;
+}
+#show_li:hover ~ #block-user-login {
+  display: block;
+  color: blue;
+  background: white;
+}*/
 

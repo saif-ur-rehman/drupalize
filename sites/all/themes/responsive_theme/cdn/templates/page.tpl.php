@@ -75,6 +75,13 @@
 global $base_url;
 ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+<!-- tooper bar -->
+<?php if (!empty($page['toper'])): ?>
+          <div id="toopbar">
+        <?php print render($page['toper']); ?>
+        </div>
+      <?php endif; ?>
+
 
   <!--Top Navigation -->
   <nav class="navbar navbar-inverse nav-first">
@@ -143,14 +150,17 @@ global $base_url;
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
             <?php print render($page['navigation']); ?>
+            <?php if (empty($logged_in)): ?>
+                <div id="show_li">
+                  <a href="#">Log In</a>
+                </div>
+              <?php endif; ?>
           <?php endif; ?>
         </nav>
       </div>
     <?php endif; ?>
   </div>
 <!--Search Bar End-->
-
-<hr>
 </header>
 
 <div class="main-container <?php print $container_class; ?>">
@@ -159,8 +169,6 @@ global $base_url;
     <?php if (!empty($site_slogan)): ?>
       <p class="lead"><?php print $site_slogan; ?></p>
     <?php endif; ?>
-
-    <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
   <div class="row">
@@ -172,8 +180,8 @@ global $base_url;
     <?php endif; ?>
 
     <section<?php print $content_column_class; ?>>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+      <!-- <?php if (!empty($page['highlighted'])): ?>
+        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div> -->
       <?php endif; ?>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
@@ -192,7 +200,9 @@ global $base_url;
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+      <?php if (!empty($page['content'])): ?>
       <?php print render($page['content']); ?>
+      <?php endif; ?>
     </section>
 
     <?php if (!empty($page['sidebar_second'])): ?>
