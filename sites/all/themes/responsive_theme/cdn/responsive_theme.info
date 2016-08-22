@@ -18,9 +18,15 @@ regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
 regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
-regions[page_bottom_bt_top]    = 'Page Bottom & Top between'
 regions[page_bottom]    = 'Page bottom'
 regions[slide_show]    = 'Image Slider'
+regions[footer_1st]         = 'Footer 1'
+regions[footer_2nd(a)]         = 'Footer 2(a)'
+regions[footer_2nd(b)]         = 'Footer 2(b)'
+regions[footer_2nd(c)]         = 'Footer 2(c)'
+regions[footer_2nd(d)]         = 'Footer 2(d)'
+regions[footer_3rd]         = 'Footer 3'
+regions[social_media]         = 'Social Media'
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets

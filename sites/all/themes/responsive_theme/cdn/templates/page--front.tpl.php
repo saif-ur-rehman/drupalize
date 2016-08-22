@@ -116,18 +116,13 @@ global $base_url;
 </nav>
 <!--Search Bar and headbar 1-->
 
- <div class="<?php print $container_class; ?>">
+ <!--  <div class="<?php print $container_class; ?>"> -->
     <div class="navbar-header">
       <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       <?php endif; ?>
-      <div class="ali&axp col-sm-7">
-        <div class="ali"><a href="<?php print $base_url; ?>">Ali</a> </div>
-        <div class="exp"><a href="<?php print $base_url; ?>">Express</a></div>
-      </div>
-        <div class="logo-slogan">Smarter Shopping, Better Living!</div>
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
@@ -160,16 +155,15 @@ global $base_url;
     <?php endif; ?>
   </div>
 <!--Search Bar End-->
-            <div class="row">
-              <div class="col-md-3">CATEGORIES<a href="#"> See All ></a></div>
-              <div class="col-md-9">
-<!-- mjaaa -->  <?php if (!empty($page['header'])): ?>
-                  <div id="header">
+
+              <div class="overflow" id="header">
+              <?php if (!empty($page['header'])): ?>
+                  <div class="col-md-2 lfloat" id="header-right">CATEGORIES<a href="#"> See All</a></div>
+                  <div class="col-md-10 lfloat" id="header-left">
                     <?php print render($page['header']); ?>
                   </div>
                 <?php endif; ?>
               </div>
-            </div>
 </header>
 
 <div class="main-container <?php print $container_class; ?>">
@@ -187,12 +181,20 @@ global $base_url;
     <?php if (!empty($page['slide_show'])): ?>
       <aside class="col-sm-6" role="complementary">
         <?php print render($page['slide_show']); ?>
-      </aside>  <!-- /#sidebar-first -->
+      </aside>  <!-- /#slide_show -->
     <?php endif; ?>
+
+
+
+
+
     <?php if (!empty($page['sidebar_first'])): ?>
 
-      <aside class="col-sm-3" role="complementary">
-        <div id="sidebar_first">
+
+
+
+      <aside class="col-sm-3 " role="complementary">
+        <div id="sidebar-first">
         <?php print render($page['sidebar_first']); ?>
         </div>
       </aside>
@@ -200,6 +202,8 @@ global $base_url;
     <?php endif; ?>
 
     <section<?php print $content_column_class; ?>>
+
+
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
@@ -220,9 +224,9 @@ global $base_url;
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php if (!empty($page['content'])): ?>
+      <?php if (!empty($page['content']) && empty($is_front)): ?>
         <div class="back">
-      <?php // print render($page['content']); ?>
+      <?php print render($page['content']); ?>
       </div>
       <?php endif; ?>
     </section>
@@ -233,6 +237,54 @@ global $base_url;
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
 
+    <?php if (!empty($page['footer_1st'])): ?>
+        <div class="col-sm-12">
+        <?php print render($page['footer_1st']); ?>
+        </div>
+        <!-- /bottom_footer -->
+    <?php endif; ?>
+
+        <?php if (!empty($page['footer_2nd(a)'])): ?>
+      <aside class="footer_2nd col-sm-3 " role="complementary">
+        <div id="">
+        <?php print render($page['footer_2nd(a)']); ?>
+        <div class="smb"><?php print render($page['social_media']); ?></div>
+        </div>
+      </aside>
+        <!-- /#footer_2nd(a)-->
+    <?php endif; ?>
+
+        <?php if (!empty($page['footer_2nd(b)'])): ?>
+      <aside class="col-sm-3 footer_2nd" role="complementary">
+        <div id="">
+        <?php print render($page['footer_2nd(b)']); ?>
+        </div>
+      </aside>
+        <!-- /#footer_2nd(b) -->
+    <?php endif; ?>
+
+        <?php if (!empty($page['footer_2nd(c)'])): ?>
+      <aside class="footer_2nd col-sm-3" role="complementary">
+        <div id="">
+        <?php print render($page['footer_2nd(c)']); ?>
+        </div>
+      </aside>
+        <!-- /#footer_2nd(c) -->
+    <?php endif; ?>
+
+        <?php if (!empty($page['footer_2nd(d)'])): ?>
+      <aside class="footer_2nd col-sm-3 " role="complementary">
+        <div id="">
+        <?php print render($page['footer_2nd(d)']); ?>
+        </div>
+      </aside>
+        <!-- /#footer_2nd(d) -->
+    <?php endif; ?>
+    <?php if (!empty($page['footer_3rd'])): ?>
+      <div class="footer_3rd">
+    <?php print render($page['footer_3rd']); ?>
+  </div>
+<?php endif; ?>
   </div>
 </div>
 
@@ -241,3 +293,4 @@ global $base_url;
     <?php print render($page['footer']); ?>
   </footer>
 <?php endif; ?>
+

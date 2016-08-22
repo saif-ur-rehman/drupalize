@@ -188,26 +188,89 @@ background-color: transparent;
 #toopbar li a:hover{
   color: #cc0000;
 }
-.region-sidebar-first{
-  background-color: white;
-}
-.region-sidebar-first li a{
+
+#sidebar-first li a{
+  margin-top: -5px;
+  margin-bottom: -5px;
   color: black;
 }
-.region-sidebar-first li a:hover{
-  color: #cc0000;
-  background-color: white;
+#sidebar-first ul li:hover{
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
 }
-.region-sidebar-first .dropdown-menu{
+#sidebar-first li a:hover{
+    color: #cc0000;
+    background-color: transparent;
+}
+#sidebar-first .dropdown-menu{
   display: none;
 }
-.region-sidebar-first ul li:hover .dropdown-menu{
+#sidebar-first ul li:hover .dropdown-menu{
   display: block;
-  margin-top: -20%;
+  margin-top: -19%;
   margin-left: 60%;
 }
-.region-sidebar-first .caret{
-  display: none;
+#sidebar-first .caret{
+    transform: rotate(-90deg);
+}
+.overflow{
+  overflow: hidden;
+}
+.lfloat{
+  float: left;
+}
+.rfloat{
+  float: right;
+}
+.footericon{
+  font-size: 70px;
+  color: #5a7ea8;
+  margin-left: 10%;
+}
+.footertext{
+  text-align: left;
+}
+.footerfull{
+  margin-right: 50px;
+  color: gray;
+}
+.footer_2nd{
+  margin-top: 40px;
+}
+.footer_2nd li a{
+  color: gray;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.footer_2nd li a:hover{
+  background-color: transparent;
+  text-decoration: underline;
+}
+.sm_lnk{
+  text-decoration: none;
+}
+.sm{
+  font-size: 40px;
+}
+.fb{
+ color: #334678;
+}
+.tw{
+ color: #00a6ff;
+}
+.ig{
+ color: #ee4678;
+}
+#edit-submit--3 {
+  color: white;
+  background-color: #f81d00;
+  margin-top:-167px;
+  margin-left: 200px;
+}
+.smb .block-title{
+  font-size: 20px;
 }
 /*#block-user-login{
   display: none;

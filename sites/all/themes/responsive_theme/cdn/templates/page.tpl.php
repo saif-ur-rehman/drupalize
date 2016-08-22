@@ -124,11 +124,6 @@ global $base_url;
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       <?php endif; ?>
-      <div class="ali&axp col-sm-7">
-        <div class="ali"><a href="<?php print $base_url; ?>">Ali</a> </div>
-        <div class="exp"><a href="<?php print $base_url; ?>">Express</a></div>
-      </div>
-        <div class="logo-slogan">Smarter Shopping, Better Living!</div>
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
@@ -175,7 +170,9 @@ global $base_url;
 
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3" role="complementary">
+      <div id="sidebar-first">
         <?php print render($page['sidebar_first']); ?>
+        </div>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
 
@@ -210,7 +207,50 @@ global $base_url;
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
+      <?php if (!empty($page['footer_1st'])): ?>
+        <div class="col-sm-12">
+        <?php print render($page['footer_1st']); ?>
+        </div>
+        <!-- /bottom_footer -->
+    <?php endif; ?>
 
+        <?php if (!empty($page['footer_2nd(a)'])): ?>
+      <aside class="footer_2nd col-sm-3 " role="complementary">
+        <div id="">
+        <?php print render($page['footer_2nd(a)']); ?>
+        <div class="smb"><?php print render($page['social_media']); ?>
+        </div>
+        </div>
+      </aside>
+        <!-- /#footer_2nd(a)-->
+    <?php endif; ?>
+
+        <?php if (!empty($page['footer_2nd(b)'])): ?>
+      <aside class="footer_2nd col-sm-3 " role="complementary">
+        <div id="">
+        <?php print render($page['footer_2nd(b)']); ?>
+        </div>
+      </aside>
+        <!-- /#footer_2nd(b) -->
+    <?php endif; ?>
+
+        <?php if (!empty($page['footer_2nd(c)'])): ?>
+      <aside class="footer_2nd col-sm-3" role="complementary">
+        <div id="">
+        <?php print render($page['footer_2nd(c)']); ?>
+        </div>
+      </aside>
+        <!-- /#footer_2nd(c) -->
+    <?php endif; ?>
+
+        <?php if (!empty($page['footer_2nd(d)'])): ?>
+      <aside class="footer_2nd col-sm-3 " role="complementary">
+        <div id="">
+        <?php print render($page['footer_2nd(d)']); ?>
+        </div>
+      </aside>
+        <!-- /#footer_2nd(d) -->
+    <?php endif; ?>
   </div>
 </div>
 
@@ -219,3 +259,4 @@ global $base_url;
     <?php print render($page['footer']); ?>
   </footer>
 <?php endif; ?>
+
