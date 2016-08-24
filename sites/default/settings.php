@@ -245,11 +245,11 @@
  * @endcode
  */
 $databases = array (
-  'default' =>
+  'default' => 
   array (
-    'default' =>
+    'default' => 
     array (
-      'database' => 'drupal-pms',
+      'database' => 'drupal-heroku',
       'username' => 'root',
       'password' => 'root',
       'host' => 'localhost',
@@ -290,7 +290,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = '4ithCB1VXnYVUANs7dSYCs9AnouBeB8duQoJeT9uhi4';
+$drupal_hash_salt = 'SB2dC0kpSQsQJYDEYW5IQkjzuHrkf682KC7usPQUbPk';
 
 /**
  * Base URL (optional).
@@ -312,7 +312,7 @@ $drupal_hash_salt = '4ithCB1VXnYVUANs7dSYCs9AnouBeB8duQoJeT9uhi4';
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
-# $base_url = 'http://www.drupal7.com';  // NO trailing slash!
+# $base_url = 'http://www.example.com';  // NO trailing slash!
 
 /**
  * PHP settings:
