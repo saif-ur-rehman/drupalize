@@ -10,3 +10,9 @@
 .navbar-header .name{
   margin: 0px;
 }
+#welcome{
+  font-size: 20px;
+  font-family: monospace;
+  color: #86c441;
+  margin: 20px,30px,20px,30px;
+}
